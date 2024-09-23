@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hypd</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/secondSection.css">
+  <link rel="stylesheet" href="./styles/thirdSection.css">
+  
+  
+</head>
+<body>
+  <div class="landing-page-header">
+    <a href="https://hypd.store/" class="logo">HYPD.</a>
+    <div class="track-your-order">Track your order</div>
+  </div>
+  <section class="section-one">
+    <div class="first-section">
+      <div class="floating-ball">
+        <img src="./assets/42f2floating_ball.png" class="floating-ball-image">
+      </div>
+        <div class="text-block">
+          <div class="main-text-first-section title-animation">
+            being a creator is fun, but being a
+            <span class="more-gradient-1">creatorpreneur</span>
+            makes you rich.
+          </div>
+          <div class="secondary-text-first-section">
+          create your own store, curate your favorite products, turn your content shop-able, get paid every time someone buys something from your store, boom!
+          </div>
+        </div>
+        <button class="join-waitlist-button">
+          Join the Waitlist
+        </button>
+    </div>
+      
+  </section>
+
+  <section class="section-two">
+    <div class="second-section">
+      <div class="base-image-div">
+        <img src="./assets/second-section-base-image.png" class="base-image">
+        <img src="./assets/model-image.png" class="model-image model-zoomin">
+        <img src="./assets/props-collection-image-1.png" class="model-image-yellow props-effect">
+        <img src="./assets/props-collection-image-2.png" class="model-image-blue props-effect">
+        <img src="./assets/props-collection-image-3.png" class="bag-image props-effect">
+        <img src="./assets/props-collection-image-4.png" class="shoe-image props-effect">
+        <img src="./assets/props-collection-image-5.png" class="money-image props-effect">
+        <img src="./assets/props-collection-image-6.png" class="money-cartoon cartoon-image">
+        <img src="./assets/props-collection-image-7.png" class="heart-cartoon cartoon-image">
+        <img src="./assets/props-collection-image-8.png" class="gift-cartoon cartoon-image">
+        <img src="./assets/props-collection-image-9.png" class="youtube-cartoon cartoon-image">
+        <img src="./assets/props-collection-image-10.png" class="tetris-cartoon cartoon-image">
+        <img src="./assets/props-collection-image-11.png" class="hashtag-cartoon cartoon-image">
+
+        <div class="p-1">
+          <img src="./assets/orbital-image-1.png" class="celestial-image">
+        </div>
+        <div class="p-2">
+          <img src="./assets/orbital-image-2.png" class="celestial-image">
+        </div>
+        <div class="p-3">
+          <img src="./assets/orbital-image-3.png" class="celestial-image">
+        </div>
+        <div class="p-4">
+          <img src="./assets/orbital-image-4.png" class="celestial-image">
+        </div>
+        <div class="p-5">
+          <img src="./assets/orbital-image-5.png" class="celestial-image">
+        </div>
+        <div class="p-6">
+          <img src="./assets/orbital-image-6.png" class="celestial-image">
+        </div>
+        <div class="p-7">
+          <img src="./assets/orbital-image-7.png" class="celestial-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-three">
+    <div class="third-section-title third-section-title-animation">
+      how rich is <span class="more-gradient-1">rich</span>
+     </div>
+    <div class="third-section-subtitle">
+      let's do a quick calculation based on your follower count and content sharing, quick maths!
+    </div>
+    <div class="third-section-slider-container">
+      <span class="slider-title">choose your # of your followers</span> <span class="posting">(facebook,youtube,instagram etc)</span>
+    <div class="slider-container">
+        <span class="min-val-slider">500</span>
+        <Input type="range" min="500" max="10000" value="2000" 
+        onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" id="rangeSlider"></Input>
+        <span class="max-val-slider">1M</span>
+      </div>
+      <div class="curr-val-bar">
+        <span id="current-value"></span>
+      </div>
+    </div>
+    <div class="subtitle-two">
+      <span>choose how often you make content/month</span>
+    </div>
+    <div class="slider-container-two">
+      <span class="min-val-slider-two">0</span>
+      <Input type="range" min="0" max="100" value="25" id="rangeSlidertwo"
+      onchange="rangeSlideTwo(this.value) , money(this.value), moneyTwo(this.value)" onmousemove="rangeSlideTwo(this.value),money(value),moneyTwo(this.value)"></Input>
+      <span class="max-val-slider-two">100</span>
+    </div>
+    <div class="curr-val-bar-two">
+      <span id="current-value-two"></span>
+    </div>
+
+    <div class="earning-section">
+      <div class="earning-one">
+        you could earn between <span id="fig-1" class="earn-range-one more-gradient-1">15</span> <span class="more-gradient-1">L</span> to <span id="fig-2" class="earn-range-two more-gradient-1">30</span> <span class="more-gradient-1"> L more*</span>.
+      </div>
+      <div class="earning-two">
+        based on an estimate of between 1% and 5% of your followers buying directly from your store.
+      </div>
+    </div>
+
+    <div class="btn">
+      <button class="signup-button">hypd.store/your_name</button>
+      <button class="join-waitlist-button">Join the Waitlist</button>
+    </div>
+  </section>
+  <script src="./logic/slider.js"></script>
+</body>
+</html>

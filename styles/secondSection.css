@@ -1,0 +1,248 @@
+.section-two{
+  background-color: black;
+  position: relative;
+}
+
+.base-image-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.base-image{
+  width: 80vw;
+  display: block;
+  position: relative;
+}
+
+.model-image{
+  position: absolute;
+  z-index: 2;
+  transform: translate(calc(-50% - 1.3vw), -63%);
+  top: 50%;
+  left: 50%;
+  height: 84%;
+
+  
+}
+
+.model-image-yellow{
+  position: absolute;
+  z-index: 1;
+  left: 35%;
+  top: 20%;
+  height: 23%;
+  transform: translate(calc(-10%-5vw),-139%);
+}
+
+.model-image-blue{
+  position: absolute;
+  z-index: 3;
+  height: 25%;
+  top: 50%;
+  transform: translate(calc(-100% + 14.5vw), -101%);
+  left: 50%;;
+}
+
+.bag-image{
+  position: absolute;
+  z-index: 1;
+  left: 66%;
+  top: 25%;
+  height: 14%;
+}
+
+.shoe-image{
+  position: absolute;
+  z-index: 1;
+  left: 66%;
+  top: 40%;
+  height: 14%;
+}
+
+.money-image{
+  position: absolute;
+  z-index: 1;
+  left: 28%;
+  top: 50%;
+  height: 22%;
+ 
+}
+
+.money-cartoon{
+  position: absolute;
+  z-index: 3;
+  height: 23%;
+  left: 20%;
+  top: 60%;
+  aspect-ratio: 5/3;
+}
+
+.heart-cartoon{
+  position: absolute;
+  z-index: 3;
+  height: 11%;
+  aspect-ratio: 4/3;
+  left: 28%;
+  top: 75%;
+}
+
+.gift-cartoon{
+  position: absolute;
+  z-index: 3;
+  height: 22%;
+  top: 66%;
+  left: 37%;
+}
+
+.youtube-cartoon{
+  position: absolute;
+  z-index: 4;
+  height: 30%;
+  left: 56%;
+  top: 60%;
+}
+
+.tetris-cartoon{
+  position: absolute;
+  z-index: 3;
+  height: 25%;
+  left: 65%;
+  top: 50%;
+}
+
+.hashtag-cartoon{
+  position: absolute;
+  z-index: 3;
+  height: 25%;
+  top: 55%;
+  left: 77%;
+  
+}
+
+.p-1{
+  position: absolute;
+  z-index: 0;
+  left: 45%;
+  top: 80%;
+  animation: orbit 10s linear infinite;
+  animation-delay: 0s;
+  
+}
+
+.p-2{
+  position: absolute;
+  z-index: 0;
+  left: 45%;
+  top: 80%;
+  animation: orbit 10s linear infinite;
+  animation-delay: 1.25s;
+}
+
+.p-3{
+  position: absolute;
+  z-index: 0;
+  left: 45%;
+  top: 80%;
+  animation: orbit 10s linear infinite;
+  animation-delay: 2.5s;
+}
+
+.p-4{
+  position: absolute;
+  z-index: 0;
+  left: 45%;
+  top: 80%;
+  animation: orbit 10s linear infinite;
+  animation-delay: 3.75s;
+}
+
+.p-5{
+  position: absolute;
+  z-index: 0;
+  left: 45%;
+  top: 80%;
+  animation: orbit 10s linear infinite;
+  animation-delay: 5s;
+}
+
+.p-6{
+  position: absolute;
+  z-index: 0;
+  left: 45%;
+  top: 80%;
+  animation: orbit 10s linear infinite;
+  animation-delay: 6.25s;
+}
+
+.p-7{
+  position: absolute;
+  z-index: 0;
+  left: 45%;
+  top: 80%;
+  animation: orbit 10s linear infinite;
+  animation-delay: 7.5s;
+}
+
+
+@keyframes orbit{
+  0%{
+    transform: rotate(0deg) translate(-42.36vw) rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(180deg) translate(-42.36vw) rotate(-180deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-50px);
+  }
+
+}
+
+@keyframes zoom-in{
+  0%{
+    opacity: 0;
+    transform: translate3d(0);
+    
+  }
+
+  100%{
+    opacity: 1;
+    transform:  translate3d(-10vw);
+  }
+}
+
+
+.model-zoomin{
+  animation: zoom-in 2s;
+  
+}
+
+.cartoon-image{
+  animation: bounce 1s ease-in-out;
+ 
+   animation-timeline: view();
+   animation-range: entry 0% cover 20% ; 
+}
+
+.props-effect{
+  animation: zoom-in 1.2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20% ;
+}
+
+.celestial-image{
+  width: 50%;
+  height: auto;
+}
+
+
